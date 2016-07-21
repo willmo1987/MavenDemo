@@ -6,6 +6,8 @@ package com.will4it.mavenlib;
  */
 public class MavenUtil {
 
+    public String name;
+
     public static String getMavenDesc() {
         return "This is from Maven Library";
     }
