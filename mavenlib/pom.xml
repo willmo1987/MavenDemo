@@ -28,6 +28,15 @@
         <defaultGoal>compile</defaultGoal>
         <plugins>
             <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.6</source>
+                    <target>1.6</target>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
+            <plugin>
                 <groupId>com.simpligility.maven.plugins</groupId>
                 <artifactId>android-maven-plugin</artifactId>
                 <version>4.4.3</version> <!-- use latest release -->
@@ -36,6 +45,7 @@
                     <failOnNonStandardStructure>false</failOnNonStandardStructure>
                     <proguard>
                         <skip>false</skip>
+                        <config>proguard-rules.pro</config>
                         <configs>
                             <config>${env.ANDROID_HOME}/tools/proguard/proguard-android.txt</config>
                         </configs>

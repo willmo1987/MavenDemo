@@ -1,15 +1,19 @@
 package com.will4it.mavenlib;
 
 /**
- * author will
- * date 7/5/16.
+ * author will date 7/5/16.
  */
 public class MavenUtil {
 
-    public String name;
+	private String name;
 
-    public static String getMavenDesc() {
-        return "This is from Maven Library";
-    }
+	public String getMavenDesc() {
+		String name = getName();
+		return "This is from Maven Library - " + name;
+	}
+
+	private String getName() {
+		return name;
+	}
 
 }

@@ -18,6 +18,8 @@
 
 -printmapping proguard.map
 
+-keep class com.will4it.mavenlib.MavenUtil{ public *;}
+
 -keepclassmembers class fqcn.of.javascript.interface.for.webview {
    public *;
 }
